@@ -194,6 +194,19 @@
     max-width: 460px;
     justify-content: center;
   }
+.credit {
+    display: flex;
+    gap: 2rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 1.5rem;
+    width: 100%;
+    max-width: 460px;
+    justify-content: center;
+  }
 
   .stat span {
     color: var(--ink);
