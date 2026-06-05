@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="game.js" defer></script>
+    <link rel="stylesheet" href="game.css">
+    
+</head>
+<body>
+    
+<header>
+  <h1>Rock | Paper | Scissors</h1>
+</header>
+
+<!-- Score board -->
+<div class="scoreboard">
+  <div class="score-block">
+    <div class="score-label">You</div>
+    <div class="score-num" id="userScore">0</div>
+  </div>
+
+  <!-- this is just for the 'vs' between the user and the computer-->
+  <div class="vs">vs</div>
+  <div class="score-block">
+    <div class="score-label">CPU</div>
+    <div class="score-num" id="cpuScore">0</div>
+  </div>
+</div>
+
+<!-- Arena -->
+<div class="arena">
+  <div class="choice-block">
+    <div class="choice-label">You</div>
+    <div class="choice-icon" id="userChoice">—</div>
+  </div>
+  <div class="divider-vert"></div>
+  <div class="choice-block">
+    <div class="choice-label">CPU</div>
+    <div class="choice-icon" id="cpuChoice">—</div>
+  </div>
+</div>
+
+<!-- Result -->
+<div class="result-msg" id="resultMsg">&nbsp;</div>
+
+<!-- Buttons -->
+<div class="choices">
+  <button class="btn-choice" onclick="playgame('rock')"    title="Rock">🪨</button>
+  <button class="btn-choice" onclick="playgame('paper')"   title="Paper">📄</button>
+  <button class="btn-choice" onclick="playgame('scissors')" title="Scissors">✂️</button>
+</div>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stat">Round&nbsp;<span id="roundCount">0</span></div>
+  <div class="stat">Wins&nbsp;<span id="winCount">0</span></div>
+  <div class="stat">Losses&nbsp;<span id="lossCount">0</span></div>
+  <div class="stat">Draws&nbsp;<span id="drawCount">0</span></div>
+</div>
+
+<!-- <button class="btn-reset" onclick="resetGame()">Reset</button> -->
+
+</body>
+</html>
